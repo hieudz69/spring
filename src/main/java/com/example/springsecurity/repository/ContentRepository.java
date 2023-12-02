@@ -10,5 +10,6 @@ import java.util.Optional;
 @Repository
 public interface ContentRepository extends JpaRepository<Content, String> {
 
+    Optional<Content> findByUsername(String username);
 
 }
